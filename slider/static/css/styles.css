@@ -1,0 +1,301 @@
+body {
+    font-family: Montserrat;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-text {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.card-img-top {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+
+
+.slider-container {
+    max-width: 750px;
+    max-height: 420px;
+    margin: auto;
+    padding: 20px;
+    background-color: #3C3C3C;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.slider-container h1, .slider-container p {
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+.slider-for, .slider-nav {
+    width: 100%;
+}
+
+.slider-for img, .slider-nav img {
+    max-width: 100%;
+    max-height: 380px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+
+.slick-prev, .slick-next {
+    color: #fff;
+    background-color: #000;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    opacity: 0.5;
+}
+
+
+
+.slider-nav .slick-slide {
+    padding: 2px;
+}
+
+.slider-nav .slick-slide img {
+    border: 2px solid transparent;
+}
+
+.slider-nav .slick-slide.slick-current img {
+    border-color: #fff;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    width: 100%;
+    height: 90px;
+    background: #0A121E;
+}
+
+
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 45px;
+    align-items: flex-start;
+    height: 20px;
+    padding: 0px;
+}
+
+.navbar-text-1 {
+width: 158px;
+height: 20px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #FFFFFF;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+text-decoration: none;
+}
+
+.nav-enter {
+    /* Кнопка авторизации */
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Центрируем элементы по вертикали */
+    justify-content: center; /* Выравниваем элементы по горизонтали */
+    padding: 12px 18px;
+    gap: 10px;
+    width: 88px;
+    height: 40px; /* Увеличил высоту для центрирования текста */
+    background: #FF342B;
+    border-radius: 4px;
+    margin-left: auto; /* Автоматический отступ слева, выравнивает элемент справа */
+    margin-right: 0;
+}
+
+
+.nav-enter-1 {
+    /* Вход */
+    font-family: 'Montserrat';
+    font-style: normal;
+    justify-content: flex-start;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
+}
+
+.slider-block {
+    width: 100%;
+    min-height: 300px;
+    background: #3C3C3C;
+    order: 2;
+    flex-grow: 0;
+}
+
+
+.slider-block-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+.slider-block-text {
+    width: 100%;
+    height: auto;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+    color: #FFFFFF;
+}
+
+.slider-block-content{
+/* Фотографии */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 45px;
+
+position: absolute;
+width: 1117px;
+height: 630px;
+left: 177.5px;
+top: 202px;
+
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 600px) {
+
+    .menu-icon {
+        display: block;
+        margin-right: 10px;
+    }
+
+    nav .container-fluid .navbar-menu {
+        display: none !important;
+    }
+
+    .navbar {
+
+        width: 100%;
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        flex-grow: 1;
+        padding: 0;
+    }
+
+    .navbar-brand {
+        margin-left: 0;
+    }
+
+    .nav-enter {
+        margin-right: 0;
+        width: 60px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .container .row .col-sm-6 {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .card-img-top {
+        width: 50%;
+        height: auto;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card {
+        margin: 0 10px;
+    }
+
+    .col-lg-8 {
+        margin-bottom: 50px;
+    }
+
+    .slider-block-header{
+    he
+
+    }
+}
+
+
+
